@@ -5,7 +5,7 @@ Create and run the container from MySql version 8.0.20 image, -d runs program in
 
 -e option sets environment variable: root password to "new-password"
 
-<code>docker run -p 3306:3306 --name mySql -e MYSQL_ROOT_PASSWORD=<new-password> -d mysql:8.0.20</code>
+<code>docker run -p 3306:3306 --name mySql -e MYSQL_ROOT_PASSWORD="new-password" -d mysql:8.0.20</code>
 
 to acceess the bash of the container
 
