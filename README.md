@@ -9,11 +9,11 @@ Create and run the container from MySql version 8.0.20 image, -d runs program in
 
 to acceess the bash of the container
 
-> docker exec -ti mySql bash
+<code>docker exec -ti mySql bash</code>
 
 login to mySql
 
-> mysql -u root -p
+<code>mysql -u root -p</code>
 
 enter password 
 
@@ -27,9 +27,9 @@ The IP of your user host should correspond to the 'Gateway' address of your mySq
 
 From the mysql bash:
 
-create user 'test1'@'GATEWAY_ADDRESS' identified by 'pass';
-grant all on university.* to 'test1'@'GATEWAY_ADDRESS';
+<code>create user 'test1'@'GATEWAY_ADDRESS' identified by 'pass';</code>
+<code>grant all on university.* to 'test1'@'GATEWAY_ADDRESS';</code>
 
-flush privileges;
+<code>flush privileges;</code>
 
 You can now exit the mysql monitor ('quit;') and exit the bash (CTRL + D)
