@@ -28,6 +28,7 @@ The IP of your user host should correspond to the 'Gateway' address of your mySq
 From the mysql bash:
 
 <code>create user 'test1'@'GATEWAY_ADDRESS' identified by 'pass';</code>
+
 <code>grant all on university.* to 'test1'@'GATEWAY_ADDRESS';</code>
 
 <code>flush privileges;</code>
