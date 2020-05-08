@@ -23,7 +23,9 @@ Run script "docker_assignment_insertion_statements.sql" to populate the tables
 
 ## Create a user for your spring boot service to communicate with your mysql service
 
-The IP of your user host should correspond to the 'Gateway' address of your mySql docker container.<br/>  You can find this value by running the command 'docker inspect "MYSQL_CONTAINER_NAME"
+The IP of your user host should correspond to the 'Gateway' address of your mySql docker container.<br/>  You can find this value by running the command:
+
+<code>docker inspect mySql</code>
 
 From the mysql bash:
 
